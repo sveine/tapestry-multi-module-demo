@@ -1,0 +1,5 @@
+syntax: glob
+target/
+build/exceptions/
+syntax: regexp
+^unversioned/

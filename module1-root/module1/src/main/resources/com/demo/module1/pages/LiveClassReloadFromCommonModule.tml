@@ -1,0 +1,30 @@
+<html t:type="layout" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" title="LCR Test">
+<head>
+    <style>
+        .fieldset-rounded {
+            padding: 0 .625em .75em;
+            margin: 0 2px;
+            border: 1px solid #c0c0c0;
+        }
+
+        .legend-rounded {
+            padding: 0 5px 0 5px;
+            border: 0;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>Live Class Reloading from common module testing</h1>
+
+<fieldset class="fieldset-rounded">
+    <legend class="legend-rounded">module1hellocpo</legend>
+    <t:module1hellocpo/>
+</fieldset>
+<br/>
+<fieldset class="fieldset-rounded">
+    <legend class="legend-rounded">commonmodule.commonhellocpo</legend>
+    <t:commonmodule.commonhellocpo/>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<div xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+    Hello from Module1 [${hello}]<br/>
+    <t:eventlink event="SayHelloModule1" async="true">Say Hello from Module1</t:eventlink><br/>
+    <t:eventlink event="sayHelloCommon" async="true">Say Hello from Common</t:eventlink>
+    <div class="ok-color">OkColor defined in commonmodule as asset</div>
+    <div class="warning-color">WarningColor defined in module1 as asset</div>
+    <img src="${asset:commonmodule/img/cafe.png}"/>
+    <br/>
+    ${getHelloService()}
+</div>

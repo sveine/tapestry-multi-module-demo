@@ -1,0 +1,112 @@
+EXCEPTION STACK:
+
+
+  Exception: org.apache.tapestry5.ioc.internal.OperationException
+    Message: Unable to delegate method invocation to property 'request' of <Proxy for RequestGlobals(org.apache.tapestry5.services.RequestGlobals)>, because the property is null.
+      trace: Handling page render request for page Index
+
+  Exception: java.lang.NullPointerException
+    Message: Unable to delegate method invocation to property 'request' of <Proxy for RequestGlobals(org.apache.tapestry5.services.RequestGlobals)>, because the property is null.
+
+  Stack trace:
+
+  - $Request_494b8c7ff0cf5.readProperty(Unknown Source)
+  - $Request_494b8c7ff0cf5.getAttribute(Unknown Source)
+  - $Request_494b8c7ff0cb6.getAttribute(Unknown Source)
+  - org.apache.tapestry5.internal.services.DeferredResponseRenderer.invokeQueuedRenderer(DeferredResponseRenderer.java:62)
+  - org.apache.tapestry5.internal.services.DeferredResponseRenderer.handlePageRender(DeferredResponseRenderer.java:54)
+  - $ComponentRequestHandler_494b8c7ff0d0c.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.services.InitializeActivePageName.handlePageRender(InitializeActivePageName.java:47)
+  - $ComponentRequestHandler_494b8c7ff0d0c.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker$2.run(RequestOperationTracker.java:73)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.run(OperationTrackerImpl.java:56)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.run(PerThreadOperationTracker.java:60)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.run(RegistryImpl.java:1254)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker.handlePageRender(RequestOperationTracker.java:66)
+  - $ComponentRequestHandler_494b8c7ff0d0c.handlePageRender(Unknown Source)
+  - $ComponentRequestHandler_494b8c7ff0cdf.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageRenderDispatcher.dispatch(PageRenderDispatcher.java:55)
+  - $Dispatcher_494b8c7ff0ce2.dispatch(Unknown Source)
+  - $Dispatcher_494b8c7ff0cd9.dispatch(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$RequestHandlerTerminator.service(TapestryModule.java:305)
+  - org.apache.tapestry5.internal.services.RequestErrorFilter.service(RequestErrorFilter.java:26)
+  - $RequestHandler_494b8c7ff0cda.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$3.service(TapestryModule.java:846)
+  - $RequestHandler_494b8c7ff0cda.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$2.service(TapestryModule.java:836)
+  - $RequestHandler_494b8c7ff0cda.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.StaticFilesFilter.service(StaticFilesFilter.java:89)
+  - $RequestHandler_494b8c7ff0cda.service(Unknown Source)
+  - com.demo.module1.services.AppModule$1.service(AppModule.java:116)
+  - $RequestFilter_494b8c7ff0cd4.service(Unknown Source)
+  - $RequestHandler_494b8c7ff0cda.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.CheckForUpdatesFilter$2.invoke(CheckForUpdatesFilter.java:105)
+  - org.apache.tapestry5.internal.services.CheckForUpdatesFilter$2.invoke(CheckForUpdatesFilter.java:95)
+  - org.apache.tapestry5.ioc.internal.util.ConcurrentBarrier.withRead(ConcurrentBarrier.java:83)
+  - org.apache.tapestry5.internal.services.CheckForUpdatesFilter.service(CheckForUpdatesFilter.java:119)
+  - $RequestHandler_494b8c7ff0cda.service(Unknown Source)
+  - $RequestHandler_494b8c7ff0cce.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$HttpServletRequestHandlerTerminator.service(TapestryModule.java:256)
+  - org.apache.tapestry5.upload.internal.services.MultipartServletRequestFilter.service(MultipartServletRequestFilter.java:45)
+  - $HttpServletRequestHandler_494b8c7ff0cd0.service(Unknown Source)
+  - org.apache.tapestry5.internal.gzip.GZipFilter.service(GZipFilter.java:59)
+  - $HttpServletRequestHandler_494b8c7ff0cd0.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.IgnoredPathsFilter.service(IgnoredPathsFilter.java:62)
+  - $HttpServletRequestFilter_494b8c7ff0cca.service(Unknown Source)
+  - $HttpServletRequestHandler_494b8c7ff0cd0.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$1.service(TapestryModule.java:796)
+  - $HttpServletRequestHandler_494b8c7ff0cd0.service(Unknown Source)
+  - $HttpServletRequestHandler_494b8c7ff0cc9.service(Unknown Source)
+  - org.apache.tapestry5.TapestryFilter.doFilter(TapestryFilter.java:166)
+  - org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+  - org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+  - org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+  - org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+  - org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+  - org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+  - org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+  - org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+  - org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+  - org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+  - org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+  - org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+  - org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+  - org.eclipse.jetty.server.Server.handle(Server.java:497)
+  - org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+  - org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+  - org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+  - org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+  - org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+  - java.lang.Thread.run(Thread.java:744)
+
+
+SYSTEM INFORMATION:
+
+Memory:
+      241,387,816 bytes free
+      524,288,000 bytes total
+      954,728,448 bytes max
+
+22 Threads:
+                                                                     Reference Handler WAITING, daemon, priority 10
+                                                                             Finalizer WAITING, daemon, priority 8
+                                                                     Signal Dispatcher RUNNABLE, daemon, priority 9
+                                                                       Attach Listener RUNNABLE, daemon
+                                                                                  main WAITING
+                                                                       qtp897000607-16 TIMED_WAITING
+  qtp897000607-17-acceptor-0@46723b5e-ServerConnector@7597bc73{HTTP/1.1}{0.0.0.0:8080} RUNNABLE
+                            qtp897000607-18-selector-ServerConnectorManager@76825429/3 RUNNABLE
+                                                                       qtp897000607-19 TIMED_WAITING
+                            qtp897000607-20-selector-ServerConnectorManager@76825429/0 RUNNABLE
+                            qtp897000607-21-selector-ServerConnectorManager@76825429/1 RUNNABLE
+                                                                       qtp897000607-22 TIMED_WAITING
+                                                                       qtp897000607-24 TIMED_WAITING
+                            qtp897000607-25-selector-ServerConnectorManager@76825429/2 RUNNABLE
+                     org.eclipse.jetty.server.session.HashSessionManager@3f562ce3Timer TIMED_WAITING, daemon
+                                                   Abandoned connection cleanup thread WAITING, daemon
+                                                                               Timer-0 TIMED_WAITING, daemon
+                       com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0 TIMED_WAITING, daemon
+                       com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1 TIMED_WAITING, daemon
+                       com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2 TIMED_WAITING, daemon
+*                                                                      qtp897000607-32 RUNNABLE
+                                                                       qtp897000607-33 TIMED_WAITING

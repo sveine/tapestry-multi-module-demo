@@ -1,0 +1,6 @@
+<html t:type="layout" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" title="Person Grid">
+<body>
+<h1>Person Grid</h1>
+<t:grid source="persons"/>
+</body>
+</html>
