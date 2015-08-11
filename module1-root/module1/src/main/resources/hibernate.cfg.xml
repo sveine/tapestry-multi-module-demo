@@ -22,6 +22,8 @@
         <!--<property name="hibernate.show_sql">true</property>-->
         <!--<property name="hibernate.format_sql">true</property>-->
 
+        <mapping class="com.demo.commonlib.entities.demo.DemoPerson"/>
+
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
     </session-factory>

@@ -16,7 +16,7 @@ public class CommonModule {
     public static void contributeComponentClassResolver(Configuration<LibraryMapping> configuration) {
         configuration.add(new LibraryMapping("commonmodule", "com.demo.commonlib"));
     }
-    public static void contributeHibernateEntityPackageManager(Configuration<String> configuration) {
-        configuration.add("com.demo.commonlib.entities.demo");
-    }
+//    public static void contributeHibernateEntityPackageManager(Configuration<String> configuration) {
+//        configuration.add("com.demo.commonlib.entities.demo");
+//    }
 }
