@@ -11,7 +11,7 @@
     </parent>
     <modules>
         <module>../top-level</module>
-        <module>../common</module>
+        <module>../core</module>
         <module>module1</module>
     </modules>
 </project>
