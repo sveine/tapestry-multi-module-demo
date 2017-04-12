@@ -8,7 +8,7 @@ import org.apache.tapestry5.services.ajax.AjaxResponseRenderer;
 import org.apache.tapestry5.services.ajax.JavaScriptCallback;
 import org.apache.tapestry5.services.javascript.JavaScriptSupport;
 
-@Import(stylesheet = {"commonmodule/css/commonstyle2.css", "css/module1style.css"})
+@Import(stylesheet = {"democore/css/commonstyle2.css", "css/module1style.css"})
 public class Module1HelloCpo {
     @Property
     private String hello = "Hello from @Property in module1";

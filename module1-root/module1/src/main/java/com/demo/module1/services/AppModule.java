@@ -1,6 +1,6 @@
 package com.demo.module1.services;
 
-import com.demo.core.services.CommonModule;
+import com.demo.core.services.DemoCore;
 import org.apache.tapestry5.SymbolConstants;
 import org.apache.tapestry5.ioc.MappedConfiguration;
 import org.apache.tapestry5.ioc.OrderedConfiguration;
@@ -22,7 +22,7 @@ import java.io.IOException;
  * This module is automatically included as part of the Tapestry IoC Registry, it's a good place to
  * configure and extend Tapestry, or to place your own service definitions.
  */
-@ImportModule(CommonModule.class)
+@ImportModule(DemoCore.class)
 public class AppModule
 {
     public static void bind(ServiceBinder binder)

@@ -1,7 +1,7 @@
 <div xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
     Hello from Core Module [${hello}]
     <t:eventlink event="sayHelloCommon" async="true">Say Hello from Common</t:eventlink>
-    <div class="error-color">ErrorColor defined in commonmodule as asset</div>
+    <div class="error-color">ErrorColor defined in democore as asset</div>
     <img src="${asset:img/cafe.png}"/>
     <br/>
     ${getHelloService()}

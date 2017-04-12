@@ -6,16 +6,16 @@ import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.services.ajax.AjaxResponseRenderer;
 import org.apache.tapestry5.services.ajax.JavaScriptCallback;
-import org.apache.tapestry5.services.javascript.JavaScriptSupport;
 
 @Import(stylesheet = {"css/commonstyle.css"})
 public class CommonHelloCpo {
+    @SuppressWarnings("unused")
     @Property
     private String hello = "Hello from @Property in common module";
     @Inject
-    AjaxResponseRenderer ajaxResponseRenderer;
+    private AjaxResponseRenderer ajaxResponseRenderer;
     @Inject
-    HelloService helloService;
+    private HelloService helloService;
 
     public String getHelloService() {
         return helloService.hello();
@@ -23,11 +23,11 @@ public class CommonHelloCpo {
 
 
     public void onSayHelloCommon() {
-        ajaxResponseRenderer.addCallback(new JavaScriptCallback() {
-            @Override
-            public void run(JavaScriptSupport javascriptSupport) {
-                javascriptSupport.require("common/jscommon").invoke("helloFromCommon");
-            }
-        });
+        ajaxResponseRenderer.addCallback((JavaScriptCallback) javascriptSupport -> javascriptSupport.require("common/jscommon").invoke("helloFromCommon"));
+    }
+
+    @SuppressWarnings("unused")
+    private void dummyForInUse() {
+        onSayHelloCommon();
     }
 }

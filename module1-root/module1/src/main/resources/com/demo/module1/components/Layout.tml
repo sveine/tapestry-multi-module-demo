@@ -24,7 +24,7 @@
                 <span class="icon-bar"></span>
             </button>
             <t:pagelink page="index" class="navbar-brand">app</t:pagelink>
-            <t:pagelink page="liveclassreloadfromcommonmodule" class="navbar-brand">LCR Test</t:pagelink>
+            <t:pagelink page="liveclassreloadfromdemocore" class="navbar-brand">LCR Test</t:pagelink>
             <t:pagelink page="persongrid" class="navbar-brand">Person Grid</t:pagelink>
             <t:pagelink page="leafletmap" class="navbar-brand">Map</t:pagelink>
         </div>

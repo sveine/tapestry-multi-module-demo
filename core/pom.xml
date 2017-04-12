@@ -28,7 +28,7 @@
                 <configuration>
                     <archive>
                         <manifestEntries>               
-                            <Tapestry-Module-Classes>com.demo.core.services.CommonModule</Tapestry-Module-Classes>
+                            <Tapestry-Module-Classes>com.demo.core.services.DemoCore</Tapestry-Module-Classes>
                         </manifestEntries>
                     </archive>
                 </configuration>

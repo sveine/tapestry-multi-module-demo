@@ -23,8 +23,8 @@
 </fieldset>
 <br/>
 <fieldset class="fieldset-rounded">
-    <legend class="legend-rounded">commonmodule.commonhellocpo</legend>
-    <t:commonmodule.commonhellocpo/>
+    <legend class="legend-rounded">democore.commonhellocpo</legend>
+    <t:democore.commonhellocpo/>
 </fieldset>
 </body>
 </html>
