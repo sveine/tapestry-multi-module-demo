@@ -1,10 +1,10 @@
-<html t:type="layout" title="About common"
+<html t:type="layout" title="About Core"
       xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
       xmlns:p="tapestry:parameter">
 
     <div class="row">
         <div class="span12">
-            <p>About common application ...</p>
+            <p>About Core application ...</p>
         </div>
     </div>
 

@@ -1,6 +1,6 @@
 package com.demo.core;
 
-import com.demo.core.components.CommonHelloCpo;
+import com.demo.core.components.CoreHelloCpo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ public class DummyForNoClassWarningsOnCore {
     public List<Class> getDummyForNoClassWarnings() {
         @SuppressWarnings("MismatchedQueryAndUpdateOfCollection")
         List<Class> dummyClasses = new ArrayList<>();
-        dummyClasses.add(CommonHelloCpo.class);
+        dummyClasses.add(CoreHelloCpo.class);
         return dummyClasses;
     }
 }

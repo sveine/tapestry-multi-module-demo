@@ -8,10 +8,10 @@ import org.apache.tapestry5.services.ajax.AjaxResponseRenderer;
 import org.apache.tapestry5.services.ajax.JavaScriptCallback;
 
 @Import(stylesheet = {"css/commonstyle.css"})
-public class CommonHelloCpo {
+public class CoreHelloCpo {
     @SuppressWarnings("unused")
     @Property
-    private String hello = "Hello from @Property in common module";
+    private String hello = "Hello from @Property in Core module";
     @Inject
     private AjaxResponseRenderer ajaxResponseRenderer;
     @Inject
@@ -22,12 +22,12 @@ public class CommonHelloCpo {
     }
 
 
-    public void onSayHelloCommon() {
-        ajaxResponseRenderer.addCallback((JavaScriptCallback) javascriptSupport -> javascriptSupport.require("common/jscommon").invoke("helloFromCommon"));
+    public void onSayHelloCore() {
+        ajaxResponseRenderer.addCallback((JavaScriptCallback) javascriptSupport -> javascriptSupport.require("core-test").invoke("helloFromCore"));
     }
 
     @SuppressWarnings("unused")
     private void dummyForInUse() {
-        onSayHelloCommon();
+        onSayHelloCore();
     }
 }

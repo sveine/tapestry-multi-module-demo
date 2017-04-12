@@ -1,7 +1,7 @@
 define(["jquery"], function ($) {
     return {
         helloFromModule1: function () {
-            alert("JS hello from module1");
+            alert("JS hello from Module1");
         }
     }
 

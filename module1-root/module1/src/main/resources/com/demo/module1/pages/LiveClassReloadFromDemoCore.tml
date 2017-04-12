@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-<h1>Live Class Reloading from common module testing</h1>
+<h1>Live Class Reloading from Core module testing</h1>
 
 <fieldset class="fieldset-rounded">
     <legend class="legend-rounded">module1hellocpo</legend>
@@ -23,8 +23,8 @@
 </fieldset>
 <br/>
 <fieldset class="fieldset-rounded">
-    <legend class="legend-rounded">democore.commonhellocpo</legend>
-    <t:democore.commonhellocpo/>
+    <legend class="legend-rounded">democore.corehellocpo</legend>
+    <t:democore.corehellocpo/>
 </fieldset>
 </body>
 </html>
