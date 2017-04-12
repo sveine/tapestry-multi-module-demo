@@ -55,6 +55,7 @@
 
     </dependencies>
     <build>
+        <outputDirectory>../../common/target/classes</outputDirectory>
         <plugins>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
