@@ -1,4 +1,4 @@
-package com.demo.commonlib.services;
+package com.demo.core.services;
 
 import org.apache.tapestry5.*;
 import org.apache.tapestry5.ioc.MappedConfiguration;

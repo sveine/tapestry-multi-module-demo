@@ -5,7 +5,7 @@
         </layout>
     </appender>
 
-    <logger name="com.demo.commonlib" level="TRACE"/>
+    <logger name="com.demo.core" level="TRACE"/>
 
     <root level="info">
         <appender-ref ref="STDOUT"/>

@@ -1,6 +1,6 @@
-package com.demo.commonlib.services;
+package com.demo.core.services;
 
-import com.demo.commonlib.services.impl.HelloServiceImpl;
+import com.demo.core.services.impl.HelloServiceImpl;
 import org.apache.tapestry5.SymbolConstants;
 import org.apache.tapestry5.ioc.MappedConfiguration;
 import org.apache.tapestry5.ioc.OrderedConfiguration;

@@ -1,6 +1,6 @@
-package com.demo.commonlib.services;
+package com.demo.core.services;
 
-import com.demo.commonlib.entities.demo.DemoPerson;
+import com.demo.core.entities.demo.DemoPerson;
 
 import java.util.List;
 

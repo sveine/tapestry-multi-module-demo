@@ -1,7 +1,7 @@
-package com.demo.commonlib.services.impl;
+package com.demo.core.services.impl;
 
-import com.demo.commonlib.entities.demo.DemoPerson;
-import com.demo.commonlib.services.PersonService;
+import com.demo.core.entities.demo.DemoPerson;
+import com.demo.core.services.PersonService;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import org.hibernate.Session;
 

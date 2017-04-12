@@ -1,6 +1,6 @@
-package com.demo.commonlib.services.impl;
+package com.demo.core.services.impl;
 
-import com.demo.commonlib.services.HelloService;
+import com.demo.core.services.HelloService;
 
 public class HelloServiceImpl implements HelloService {
     @Override

@@ -1,4 +1,4 @@
-package com.demo.commonlib.pages;
+package com.demo.core.pages;
 
 
 import org.apache.tapestry5.Block;

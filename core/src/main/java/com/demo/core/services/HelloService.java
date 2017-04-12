@@ -1,4 +1,4 @@
-package com.demo.commonlib.services;
+package com.demo.core.services;
 
 /**
  * Created by svein on 05.08.2015.

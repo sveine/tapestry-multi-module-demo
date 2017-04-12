@@ -1,4 +1,4 @@
-package com.demo.commonlib.entities.demo;
+package com.demo.core.entities.demo;
 
 import javax.persistence.*;
 

@@ -1,6 +1,6 @@
 package com.demo.module1.components;
 
-import com.demo.commonlib.services.HelloService;
+import com.demo.core.services.HelloService;
 import org.apache.tapestry5.annotations.Import;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.ioc.annotations.Inject;

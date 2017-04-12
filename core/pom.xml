@@ -1,8 +1,7 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>common</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <artifactId>core</artifactId>
 
     <parent>
         <groupId>com.demo</groupId>
@@ -28,8 +27,8 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
                     <archive>
-                        <manifestEntries>
-                            <Tapestry-Module-Classes>com.demo.commonlib.services.CommonModule</Tapestry-Module-Classes>
+                        <manifestEntries>               
+                            <Tapestry-Module-Classes>com.demo.core.services.CommonModule</Tapestry-Module-Classes>
                         </manifestEntries>
                     </archive>
                 </configuration>

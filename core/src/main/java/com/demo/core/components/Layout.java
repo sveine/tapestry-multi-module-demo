@@ -1,4 +1,4 @@
-package com.demo.commonlib.components;
+package com.demo.core.components;
 
 import org.apache.tapestry5.*;
 import org.apache.tapestry5.annotations.*;

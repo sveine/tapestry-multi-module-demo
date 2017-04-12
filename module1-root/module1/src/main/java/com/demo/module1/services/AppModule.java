@@ -1,6 +1,6 @@
 package com.demo.module1.services;
 
-import com.demo.commonlib.services.CommonModule;
+import com.demo.core.services.CommonModule;
 import org.apache.tapestry5.SymbolConstants;
 import org.apache.tapestry5.ioc.MappedConfiguration;
 import org.apache.tapestry5.ioc.OrderedConfiguration;
