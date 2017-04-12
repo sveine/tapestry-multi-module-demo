@@ -9,7 +9,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <tapestry-release-version>5.4-beta-33</tapestry-release-version>
+        <tapestry-release-version>5.4.1</tapestry-release-version>
         <geotools-version>13.0</geotools-version>
         <servlet-api-release-version>2.5</servlet-api-release-version>
         <slf4j-release-version>1.7.12</slf4j-release-version>
@@ -18,16 +18,9 @@
  
     <repositories>
         <repository>
-            <id>apache-staging</id>
-            <url>https://repository.apache.org/content/groups/staging/</url>
-        </repository>
-        <repository>
-            <id>codehaus-snapshots-repo</id>
-            <url>https://nexus.codehaus.org/content/groups/snapshots-group/</url>
-        </repository>
-        <repository>
             <id>Hibernate Spatial repo</id>
-            <url>http://www.hibernatespatial.org/repository</url>
+            <!--<url>http://www.hibernatespatial.org/repository</url>-->
+            <url>http://nexus.e-is.pro/nexus/content/groups/public</url>
         </repository>
         <repository>
             <id>osgeo</id>
@@ -60,6 +53,7 @@
                 </exclusions>
             </dependency>
             <dependency>
+                <!-- referenced in java entities: @Type(type = "org.hibernate.spatial.GeometryType")-->
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-spatial</artifactId>
                 <version>4.0</version>
@@ -72,7 +66,7 @@
             <dependency>
                 <groupId>org.tynamo</groupId>
                 <artifactId>tapestry-security</artifactId>
-                <version>0.6.2</version>
+                <version>0.6.6</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.apache.tapestry</groupId>
@@ -107,7 +101,7 @@
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>5.1.22</version>
+                <version>5.1.27</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -129,7 +123,7 @@
                 <plugin>
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-maven-plugin</artifactId>
-                    <version>9.2.10.v20150310</version>
+                    <version>9.3.10.v20160621</version>
                     <configuration>
                         <webApp>
                             <contextPath>/</contextPath>
@@ -147,8 +141,8 @@
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
-                        <source>1.6</source>
-                        <target>1.6</target>
+                        <source>1.8</source>
+                        <target>1.8</target>
                     </configuration>
                 </plugin>
                 <plugin>
