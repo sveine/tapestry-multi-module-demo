@@ -5,7 +5,7 @@ Open in intelliJ
 2. Accept the "Frameworks detected: Tapestry framework is detected in the project" from tml files
 3. Open View: "Maven Projects"
 4. Expand module1 > Plugins > jetty, right click on jetty:run and select Debug
-5. Goto http://localhost:8080
+5. Goto http://localhost:9876
 
 6. Open Run/Debug Configuration > Maven > module 1 > Parameters, Add Before launch: Run Maven Goal 'module1-root: install'
 
