@@ -38,6 +38,20 @@ define(["jquery", "t5/core/zone", "t5/core/events", "t5/core/ajax"], function ($
     };
 
     /**
+     * @param {string} event
+     * @param {Object=} options
+     * @param {{}|String|Array} [options.data]
+     * @param {String} [options.method=POST]
+     * @param {TapestryUtil.ResponseFunction} [options.success]
+     * @param {TapestryUtil.ResponseFunction} [options.failure]
+     * @param {Function} [options.complete]
+     * @returns TapestryUtil.RequestWrapper
+     */
+    TapestryUtil.ajaxEvent = function (event, options) {
+        var newOptions = _.extend({element: null}, options);
+        return Ajax(event, newOptions);
+    };
+    /**
      * @param {string} url
      * @param {Object=} options
      * @param {{}|String|Array} [options.data]

@@ -9,7 +9,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <tapestry-release-version>5.4.1</tapestry-release-version>
+        <tapestry-release-version>5.4.2</tapestry-release-version>
         <geotools-version>13.0</geotools-version>
         <servlet-api-release-version>2.5</servlet-api-release-version>
         <slf4j-release-version>1.7.12</slf4j-release-version>

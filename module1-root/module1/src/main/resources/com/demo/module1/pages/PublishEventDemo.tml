@@ -1,0 +1,17 @@
+<html t:type="layout" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" title="PublishEvent Demo">
+<body>
+<h1>PublishEvent Demo</h1>
+<p>
+    <t:eventlink class="btn btn-primary" event="runAjax" context="1" async="true">Ajax context=1</t:eventlink>
+</p>
+<p>
+    <t:eventlink class="btn btn-primary" event="runAjax" context="2" async="true">Ajax context=2</t:eventlink>
+</p>
+<p>
+    <t:eventlink class="btn btn-primary" event="runAjax" context="3" async="true">Ajax context=3</t:eventlink>
+</p>
+
+<h3>Result</h3>
+<div id="resultPane" class="well"/>
+</body>
+</html>
