@@ -1,8 +1,6 @@
 <html t:type="layout" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" title="LCR Test">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link href="${asset:democore/leaflet/leaflet.css}" type="text/css" rel="stylesheet"/>
-    <script src="${asset:democore/leaflet/leaflet-src.js}"></script>
     <style>
         #map {
             height: 600px;
@@ -18,5 +16,7 @@
 
 <div id="map">
 </div>
+
+<script src="${asset:META-INF/assets/democore/leaflet1.0.3+ed36a04/leaflet-src.js}"/>
 </body>
 </html>
