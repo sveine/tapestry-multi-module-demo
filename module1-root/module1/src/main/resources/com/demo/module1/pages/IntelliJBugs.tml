@@ -1,4 +1,4 @@
-<html t:type="layout" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" title="Leaflet Map">
+<html t:type="layout" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" title="IntelliJ Bugs">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <style>
@@ -9,12 +9,11 @@
     </style>
 </head>
 <body>
-<t:pagelink page="index" style="float: left;margin-right: 5px;">
-    HOME
-</t:pagelink>
+<h1>IntelliJ Bugs</h1>
 <div id="infoBox">&nbsp;</div>
-
 <div id="map"/>
+
+Zoom:<span id="zoom"/>
 
 </body>
 </html>

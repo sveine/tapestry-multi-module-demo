@@ -1,12 +1,10 @@
-/**
- @typedef {{}} L
- */
-define(["jquery"],
+define(["leaflet-src", "jquery"],
         /**
+         * @param L
          * @param $
          * @return {Leaflet}
          */
-        function ($) {
+        function (L, $) {
 
             /** @constructor */
             function Leaflet() {
@@ -23,7 +21,7 @@ define(["jquery"],
                     center: [51.505, -0.09],
                     zoom: 13
                 });
-                new L.TileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
 
             }/*init*/;
 
