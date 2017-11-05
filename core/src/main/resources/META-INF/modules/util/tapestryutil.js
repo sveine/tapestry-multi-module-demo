@@ -5,7 +5,6 @@ define(["jquery", "underscore", "t5/core/zone", "t5/core/events", "t5/core/ajax"
          * @param Zone
          * @param Events
          * @param Ajax
-         * @return {TapestryUtil}
          */
         function ($, _, Zone, Events, Ajax) {
 

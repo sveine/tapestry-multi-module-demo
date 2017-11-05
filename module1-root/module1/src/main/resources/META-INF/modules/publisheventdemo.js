@@ -2,7 +2,6 @@ define(["jquery", "util/tapestryutil"],
         /**
          * @param $
          * @param TapestryUtil
-         * @return {PublishEventDemo}
          */
         function ($, TapestryUtil) {
 

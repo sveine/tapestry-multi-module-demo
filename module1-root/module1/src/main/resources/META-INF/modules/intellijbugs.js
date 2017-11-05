@@ -3,7 +3,6 @@ define(["leaflet-src", "jquery", "underscore"],
          * @param L
          * @param $
          * @param _
-         * @return {IntelliJBugs}
          */
         function (L, $, _) {
 
@@ -38,7 +37,7 @@ define(["leaflet-src", "jquery", "underscore"],
                     //-------------------------------------------------
                     // Unresolved function or method extend()
                     //-------------------------------------------------
-                    mapOptions = _.extend(mapOptions, {zoom: zoom} );
+                    mapOptions = _.extend(mapOptions, {zoom: zoom});
                 }
 
                 //-------------------------------------------------

@@ -1,4 +1,4 @@
-define(["jquery"], function ($) {
+define(function () {
     return {
         helloFromCore: function () {
             alert("JS hello from Core");
